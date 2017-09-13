@@ -1,5 +1,7 @@
 # Toolkit for drawing on WaveShare 2.9 inch e-Paper Display
 
+![display](https://github.com/nshadov/e-paper-display/raw/master/img/screen.jpg)
+
 ## About the display
 
 It's pretty inexpensive e-Paper display module you could communicate with via SPI
