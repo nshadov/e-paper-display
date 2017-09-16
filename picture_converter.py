@@ -58,8 +58,11 @@ class DisplayImage(object):
         img = Image.open(filename)
         data = list()
 
-        if img.size[0] != 296 or img.size[1] != 128:
+        if img.size[0] > 296 or img.size[1] > 128:
             img = img.resize((296, 128), Image.ANTIALIAS)
+
+        self.width = img.size[0]
+        self.height = img.size[1]
 
         pixels = img.load()
         for i in range(img.size[0]):
